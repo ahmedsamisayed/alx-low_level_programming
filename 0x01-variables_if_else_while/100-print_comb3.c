@@ -18,8 +18,9 @@ if (x < w)
 {putchar(x);
 putchar(w);
 if ((x != '8') || (w != '9'))
-putchar(',');
+{putchar(',');
 putchar(' ');
+}
 }
 }
 }
