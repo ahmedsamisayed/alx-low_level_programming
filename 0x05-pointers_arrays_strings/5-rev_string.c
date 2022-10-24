@@ -16,7 +16,10 @@ void rev_string(char *s)
 		x++;
 	}
 
-	char *y = *s;
+	char *y;
+
+	y = s;
+
 	int z = x, h;
 
 	for (x -= 1; x >= 0; x--)
