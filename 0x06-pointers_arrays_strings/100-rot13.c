@@ -34,8 +34,10 @@ char *rot13(char *s)
 		for (i2 = 0; i2 < 52; i2++)
 		{
 			if (s[i1] == alpha[i2])
+			{
 				s[i1] = rot13[i2];
 			break;
+			}
 		}
 
 		i1++;
