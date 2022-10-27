@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - appends String to another with number of bytes
+ * _strncat - appends String to another with number of bytes
  * @dest: the first String
  * @src: the second String
  * @n: the number of bytes
