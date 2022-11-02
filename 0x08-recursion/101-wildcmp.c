@@ -49,7 +49,7 @@ int str_len_no_wilds(char *s)
 			len++;
 
 		index++;
-		len += str_len_no_wilds(s + index)
+		len += str_len_no_wilds(s + index);
 	}
 
 	return (len);
