@@ -2,6 +2,7 @@
 
 int is_palindrome(char *s);
 int check_palindrome(char *s, int len, int i);
+int find_strlen(char *s);
 
 /**
  * is_palindrome - check if the string is palindrome
@@ -13,7 +14,7 @@ int check_palindrome(char *s, int len, int i);
 int is_palindrome(char *s)
 {
 	int i = 0;
-	int l = _strlen_recursion(s);
+	int l = find_strlen(s);
 
 	if (!(*s))
 		return (1);
@@ -40,4 +41,24 @@ int check_palindrome(char *s, int len, int i)
 
 	return (0);
 
+}
+
+/**
+ * find_strlen - Returns the length of a string.
+ * @s: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
+
+int find_strlen(char *s)
+{
+	int len = 0;
+
+	if (*(s + len))
+	{
+		len++;
+		len += find_strlen(s + len);
+	}
+
+	return (len);
 }
