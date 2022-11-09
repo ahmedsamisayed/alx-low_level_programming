@@ -14,7 +14,7 @@ char **strtow(char *str)
 	int i, j = 0, l = 0;
 	char *a;
 
-	if (str == NULL || str == "")
+	if (str == NULL || str == " ")
 		return (NULL);
 
 	for (i = 0; str[i]; i++)
@@ -43,5 +43,5 @@ char **strtow(char *str)
 		}
 	}
 
-	return (a);
+	return (*a);
 }
