@@ -40,10 +40,10 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	else
 	{
-		l = *head;
-		while (l->next != NULL)
-			l = l->next;
-		l->next = n;
+		la = *head;
+		while (la->next != NULL)
+			la = la->next;
+		la->next = n;
 	}
 
 	return (*head);
