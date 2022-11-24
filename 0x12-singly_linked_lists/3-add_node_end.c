@@ -22,12 +22,6 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	s = strdup(str);
 
-	if (str == NULL)
-	{
-		free(n);
-		return (NULL);
-	}
-
 	for (l = 0; str[l];)
 		l++;
 
